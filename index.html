@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is a simple quiz app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 class="title">Quizz App</h1>
+    <div class="container">
+      <div class="t-or-s">
+        <h1>First, You are ....</h1>
+        <div>
+          <button class="teacher-b">Teacher</button>
+          <span>Or</span>
+          <button class="student-b">Student</button>
+        </div>
+      </div>
+      <div class="teacher-div">
+        <h2>Create a new quiz</h2>
+        <input type="text" placeholder="Enter any key for your quiz" />
+        <br />
+        <span
+          style="
+            display: none;
+            color: rgb(185, 50, 50);
+            margin-bottom: 5px;
+            margin-top: -5px;
+          "
+          >This field is required</span
+        >
+        <span
+          style="
+            display: none;
+            color: rgb(185, 50, 50);
+            margin-bottom: 5px;
+            margin-top: -5px;
+          "
+          >This quiz is already exists</span
+        >
+        <button class="quiz-d">Add question</button>
+      </div>
+      <div class="student-div">
+        <h2>Join a quizz</h2>
+        <input type="text" placeholder="Enter your name" />
+        <br />
+        <input type="text" placeholder="Enter Quiz key" />
+        <span
+          style="
+            display: none;
+            color: rgb(185, 50, 50);
+            margin-bottom: 5px;
+            margin-top: 10px;
+          "
+          >invalid name or key</span
+        >
+        <span
+          style="
+            display: none;
+            color: rgb(185, 50, 50);
+            margin-bottom: 5px;
+            margin-top: 10px;
+          "
+          >Be sure that the KEY you enter is true</span
+        >
+        <br />
+        <button class="add-q">Start</button>
+      </div>
+      <div class="question-div">
+        <h2>Create your quiz</h2>
+        <button class="add-q">Add question</button>
+        <div class="q-display"></div>
+      </div>
+      <div class="the-quiz">
+        <div style="display: flex;justify-content: space-between;flex-wrap: wrap;gap: 15px;">
+          <h2 class="student-name"
+          style="
+            font-size: 20px;
+            font-family: system-ui;
+          "
+        >
+      </h2>
+        <h2 class="quiz-key"
+          style="
+            font-size: 20px;
+            font-family: system-ui;
+          "
+        >
+    </h2>
+        </div>
+    <div class="the-content"></div>
+    <span class="result-pop">Show your result and answers</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
