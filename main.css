@@ -26,12 +26,23 @@ scroll-behavior: smooth;
 }
 .container  .t-or-s{
     position: absolute;
-    margin-left: 60%;
+    margin-left: 53%;
     transform: translateX(-50%);
     width: var(--main-width);
     padding: 20px;
     margin-top: 150px;
     transition: 2.5s;
+}
+@media(max-width:750px){
+    .container  .t-or-s{
+        position: absolute;
+        margin-left: 60%;
+        transform: translateX(-50%);
+        width: var(--main-width);
+        padding: 20px;
+        margin-top: 150px;
+        transition: 2.5s;
+    }
 }
 .container .t-or-s div {
     margin-top: 35px;
